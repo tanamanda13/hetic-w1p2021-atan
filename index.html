@@ -2,25 +2,25 @@
 <html>
   <head>
    <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
      <title>Kheak&Vero</title>
+     <link href="css\reset.css" rel="stylesheet"/>
+     <link href="css\style.css" rel="stylesheet"/>
+     <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
      <meta name="description" content="restaurant kheak & vero cuisine thaïlandais vietnamienne" />
   </head>
   <body>
-   <header><h1>Bienvenue chez Kheak&Vero</h1></header>
-          <h2><em>cuisine thaïlandaise et vietnamienne</em></h2>
-    <nav>
-      <ol>
-        <li><a href="#Menu">Menu</a></li>
-        <li>Photos</li>
-        <li>Infos pratiques</li>
-      </ol>
-    </nav>
-
-
-
-    
+   <header class="top">
+    <div class="band"><a href="#carte">La Carte</a></div>
+    <div class="band"><a href="#Photos">Photos</a></div>
+    <div class="band"><a href="#infos">Infos pratiques</a></div>
+  </header>
+  
+  <div class="titre"><em>Bienvenue chez Kheak & Vero</em> <br>cuisine thaïlandaise et vietnamienne</div><br>
+  
     <main>
-      <section id="Menus"><h3>Menus</h3>
+      <section id="carte"><h3>La carte</h3>
         <h4>Plats thaïlandais</h4>
           <h5>Phad Thai</h5>
             <p>Plat typique thaïlandais s'il en est, le Phad thai est un plat composé de pâte de riz et d'une sauce sucré/salé, sauté avec de l'oeuf et une viande au choix</p>
@@ -31,10 +31,48 @@
             <p>Plat composé de boeuf et de vermicelles accompagné de crudités, de nems et sauce poisson</p>
       </section>
       
-      <section><h3>Photos</h3></section>
+      <section id="Photos"><h3>Photos</h3>
+        <figure class="pic">
+            <img src="photos/phadthai.jpg" alt="phad thaÏ"/>
+            <figcaption>Un classique, le phad thaï</figcaption>
+        </figure>
 
+        <figure class="pic">
+            <img src="photos/curry rouge.jpg" alt="curry rouge"/>
+            <figcaption>Un curry pour se réconforter </figcaption>
+        </figure>
 
+        <figure class="pic">
+            <img src="photos/entrées.jpg" alt="entrées"/>
+            <figcaption>Une mise en route appétissante par des entrées variées </figcaption>
+        </figure>
 
+        <figure class="pic">
+            <img src="photos/bobun.jpg" alt="bobun"/>
+            <figcaption>Le fameux bobun ! </figcaption>
+        </figure>
+      </section>
+      <section class="follow">
+        <h5>Nous suivre</h5>
+          <ul>
+            <li><a href="https://www.instagram.com/explore/locations/33248295/kheak-vero/?hl=fr" target="_blank">sur instagram</a></li>
+            <li><a href="https://www.facebook.com/pages/Kheak-Vero/146828712177216" target="_blank">sur facebook</a></li>
+          </ul>
+      </section>     
+
+      <footer id="infos"><div>Infos pratiques</div>
+        <ul>
+          <li>lieu : 1 rue Alexandre Parodi 75010 PARIS, FRANCE</li>
+          <li>téléphone</li>
+          <li>horaire</li>
+        </ul>
+      </footer>
     </main>
+
+    <aside>Nouveauté !!! un dessert tout droit venu de thaïlande</aside>
+  
+
+
+
   </body>
 </html>

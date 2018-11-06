@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face{
+  font-family: "Maria_lucia";
+  src: local("Maria_lucia") format("tff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Parisienne'; cursive;
+  src: local('Parisienne') format('tff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+body{
+  margin-top: 100px;
+  display: grid;
+  background-attachment: fixed;
+  background-image: url("https://www.paysagistesbretons.com/wp-content/uploads/2014/08/planter-bambou.jpg");
+
+  grid-template-columns: auto 2fr auto;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 20px 20px;
+
+  
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 200px;
+}
+
+
+
+header {
+  background: #005316;
+  height: 70px;
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  display: flex;
+  text-align: center;
+}  
+
+.band{
+  flex-grow: 1;
+  align-self: center;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+.titre{
+  font-family: 'Parisienne', sans-serif;
+  font-size: 50px;
+  background-color: #7CA982;
+  color: whitesmoke;
+  grid-area: 1 / 1 / 3 / span 3;
+  
+}
+
+section:nth-of-type(1){
+  background-color: blanchedalmond;
+  padding: 35px;
+  grid-area: 4 / 2 / 5 / span 2;
+}
+
+section:nth-of-type(2){
+  background-color: burlywood;
+  padding: 35px;
+}
+
+section:nth-of-type(3){
+  background-color: darkgrey;
+}
+
+footer{
+  background-color: slategray;
+  margin-bottom: 10px;
+}
+
+.pic{
+  background-color: burlywood;
+}
+
+.follow{
+  background-color: blue;
+}
+
+aside{
+  background-color: coral;
+  height: 50px;
+}
+
